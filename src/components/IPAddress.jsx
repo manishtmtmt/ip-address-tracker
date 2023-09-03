@@ -8,7 +8,10 @@ const IPAddress = () => {
   const [location, setLocation] = useState("");
   const [timezone, setTimezone] = useState("");
   const [ISP, setISP] = useState("");
-  const [coordinates, setCoordinates] = useState({});
+  const [coordinates, setCoordinates] = useState({
+    lat: 27.5035,
+    lng: 77.67215,
+  });
 
   const fetchLocation = (ipAddress = "") => {
     fetch(
